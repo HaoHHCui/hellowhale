@@ -1,0 +1,11 @@
+kubectl create deployment hellowhale --image localhost:5000/jana/hellowhale
+
+
+kubectl expose deployment hellowhale --port=80 --name=hellowhalesvc --type=NodePort
+
+
+ kubectl scale deployment hellowhale --replicas=2
+
+
+
+
